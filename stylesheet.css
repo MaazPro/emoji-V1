@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+.face{
+    width: 500px;
+    height: 500px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:  -250px;
+    margin-top: -250px;
+}
+.eye{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+.eye:nth-child(1){
+    top: 100px;
+    left: 40px;
+}
+.eye:nth-child(2){
+    top: 100px;
+    right: 40px;
+}
+.pupil{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    position: absolute; /*This property enables the top, right, bottom and left property */
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    overflow: hidden; /*This will ensire the eye circle does not spill outside of the white circle*/
+}
+.lips{
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -200px; /*Half of the width: 400px*/
+    border: 5px solid black;
+    border-color: transparent transparent black transparent;
+}
